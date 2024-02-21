@@ -20,8 +20,8 @@ robot = DriveBase(test_motor,test_motor1, wheel_diameter= 55.5,axle_track=120)
 ev3.speaker.beep()
 
 # Run the motor up to 500 degrees per second. To a target angle of 90 degrees.
-#test_arm.run(-500)
-#robot.straight(500)
+test_arm.run(-500)
+robot.straight(500)
 test_arm.run_target(500,10000)
 
 # Play another beep sound.
